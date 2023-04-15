@@ -1,0 +1,48 @@
+html {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-white-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+
+  --size-mobile: 375px;
+  --size-desktop: 1440px;
+
+  font-family: Outfit;
+
+  font-size: 15px;
+
+  background-color: var(--clr-white-gray);
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 90%;
+  padding: 16px;
+  background-color: var(--clr-white);
+  border-radius: 24px;
+}
+
+.card > p {
+  text-align: center;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.card > .title {
+  font-weight: 700;
+  color: var(--clr-dark-blue);
+}
+
+.card > .sub-title {
+  font-weight: 400;
+  color: var(--clr-grayish-blue);
+}
