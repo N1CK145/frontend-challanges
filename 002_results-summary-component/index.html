@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Hanken+Grotesk"
+    />
 
-  Your Result
-  76
-  of 100
+    <link rel="stylesheet" href="./style.css" />
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  Reaction
-  80 / 100
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
 
-  Memory
-  92 / 100
+  <body>
+    <div class="results">
+      <div class="header">
+        <h3>Your Result</h3>
 
-  Verbal
-  61 / 100
+        <div class="score">
+          <span>76</span>
+          <span>of 100</span>
+        </div>
 
-  Visual
-  72 / 100
+        <h2 class="title">Great</h2>
+        <p class="text">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="summary">
+        <h2>Summary</h2>
+        <div class="summary-item summary-item-red">
+          <span class="material-symbols-outlined">bolt</span>
+          <span class="name">Reaction</span>
+          <span class="points">
+            <span>80</span>
+            <span> / 100</span>
+          </span>
+        </div>
+
+        <div class="summary-item summary-item-yellow">
+          <span class="material-symbols-outlined">neurology</span>
+          <span class="name">Memory</span>
+          <span class="points">
+            <span>92</span>
+            <span> / 100</span>
+          </span>
+        </div>
+
+        <div class="summary-item summary-item-green">
+          <span class="material-symbols-outlined">sms</span>
+          <span class="name">Verbal</span>
+          <span class="points">
+            <span>61</span>
+            <span> / 100</span>
+          </span>
+        </div>
+
+        <div class="summary-item summary-item-blue">
+          <span class="material-symbols-outlined">visibility</span>
+          <span class="name">Visual</span>
+          <span class="points">
+            <span>72</span>
+            <span> / 100</span>
+          </span>
+        </div>
+      </div>
+
+      <button class="continue">Continue</button>
+    </div>
+  </body>
 </html>

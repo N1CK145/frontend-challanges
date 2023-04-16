@@ -1,0 +1,135 @@
+html {
+  --clr-light-red: 0, 100%, 67%;
+  --clr-orangey-yellow: 39, 100%, 56%;
+  --clr-green-teal: 166, 100%, 37%;
+  --clr-cobalt-blue: 234, 85%, 45%;
+
+  --clr-light-slate-blue: #7857ff;
+  --clr-light-royal-blue: #2e2be9;
+
+  --clr-violet-blue: hsla(256, 72%, 46%, 1);
+  --clr-persian-blue: hsla(241, 72%, 46%, 0);
+
+  --clr-white: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+  --ff-hakan: "Hanken Grotesk";
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-hakan);
+  background-color: var(--clr-white);
+
+  margin: 0;
+}
+
+.results > .header {
+  text-align: center;
+
+  padding: 22px;
+
+  background-image: linear-gradient(
+    var(--clr-light-slate-blue) 0%,
+    var(--clr-light-royal-blue) 100%
+  );
+
+  border-radius: 0 0 32px 32px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.results > .header > h2 {
+  color: var(--clr-light-lavender);
+  font-weight: 800;
+}
+
+.results > .header > h3 {
+  color: var(--clr-light-lavender);
+  font-weight: 700;
+}
+
+.results > .header > p {
+  color: var(--clr-light-lavender);
+}
+
+.score {
+  margin: 16px auto;
+
+  background-image: linear-gradient(
+    var(--clr-violet-blue) -20%,
+    var(--clr-light-royal-blue) 100%
+  );
+  width: fit-content;
+  padding: 32px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 4px 1px var(--clr-violet-blue);
+}
+
+.score > span {
+  display: block;
+}
+
+.score > span:first-of-type {
+  font-size: 30px;
+  color: var(--clr-light-lavender);
+  font-weight: 800;
+}
+
+.summary {
+  margin: 16px;
+}
+.summary > h2 {
+  font-size: 18px;
+  color: var(--clr-dark-gray-blue);
+}
+
+.summary > .summary-item {
+  margin: 18px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.summary-item-red {
+  background-color: hsla(var(--clr-light-red), 0.08);
+  color: hsl(var(--clr-light-red));
+}
+
+.summary-item-yellow {
+  background-color: hsla(var(--clr-orangey-yellow), 0.08);
+  color: hsl(var(--clr-orangey-yellow));
+}
+
+.summary-item-green {
+  background-color: hsla(var(--clr-green-teal), 0.08);
+  color: hsl(var(--clr-green-teal));
+}
+
+.summary-item-blue {
+  background-color: hsla(var(--clr-cobalt-blue), 0.08);
+  color: hsl(var(--clr-cobalt-blue));
+}
+
+.results > button {
+  background-color: var(--clr-dark-gray-blue);
+  margin: 16px;
+  width: calc(100% - 32px);
+  padding: 16px;
+  border: none;
+  border-radius: 32px;
+  color: var(--clr-white);
+  font-size: 18px;
+}
