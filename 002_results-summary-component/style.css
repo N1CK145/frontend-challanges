@@ -66,12 +66,11 @@ body {
 
   background-image: linear-gradient(
     var(--clr-violet-blue) -20%,
-    var(--clr-light-royal-blue) 100%
+    transparent 100%
   );
   width: fit-content;
   padding: 32px;
   border-radius: 100%;
-  box-shadow: 0px 0px 4px 1px var(--clr-violet-blue);
 }
 
 .score > span {
@@ -123,7 +122,7 @@ body {
   color: hsl(var(--clr-cobalt-blue));
 }
 
-.results > button {
+.continue {
   background-color: var(--clr-dark-gray-blue);
   margin: 16px;
   width: calc(100% - 32px);
@@ -132,4 +131,37 @@ body {
   border-radius: 32px;
   color: var(--clr-white);
   font-size: 18px;
+}
+
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+    background-color: var(--clr-white);
+  }
+
+  .results {
+    max-width: 700px;
+    display: flex;
+    justify-content: stretch;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image: linear-gradient(hsla(0, 0%, 100%, 0.139), white);
+    border-radius: 32px;
+  }
+
+  .results > .header {
+    max-width: 300px;
+    border-radius: 32px;
+  }
+
+  .results > .wrapper {
+    width: 100%;
+    margin: 24px;
+  }
 }
