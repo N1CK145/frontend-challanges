@@ -64,10 +64,7 @@ body {
 .score {
   margin: 16px auto;
 
-  background-image: linear-gradient(
-    var(--clr-violet-blue) -20%,
-    transparent 100%
-  );
+  background-image: linear-gradient(var(--clr-violet-blue), transparent 100%);
   width: fit-content;
   padding: 32px;
   border-radius: 100%;
@@ -131,9 +128,17 @@ body {
   border-radius: 32px;
   color: var(--clr-white);
   font-size: 18px;
+  cursor: pointer;
 }
 
-@media (min-width: 1440px) {
+.continue:hover {
+  background-image: linear-gradient(
+    var(--clr-light-slate-blue) 0%,
+    var(--clr-light-royal-blue) 100%
+  );
+}
+
+@media (min-width: 725px) {
   body {
     height: 100vh;
     background-color: var(--clr-white);
