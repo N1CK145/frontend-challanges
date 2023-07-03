@@ -146,7 +146,11 @@ h6 {
   width: 75%;
   aspect-ratio: 264/145;
   background-size: contain;
-  background-color: hotpink;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: max(1rem, 5%);
 }
 
 .credit-card-back {
@@ -179,30 +183,22 @@ h6 {
   font-size: 0.7rem;
 }
 
-#vis-card-owner-and-exp-date {
-  padding-inline: 1rem;
-  bottom: -2.1rem;
-}
-
 #vis-card-cvc {
   font-size: 0.75rem;
   width: 100%;
-  padding-inline: 1.8rem;
-  text-align: justify;
-  justify-content: end;
-  margin-top: 3.5rem;
+  text-align: right;
+  margin-top: 20%;
+  padding-right: 6%;
 }
 
 #credit-card-logo {
-  width: 4rem;
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
+  width: 25%;
 }
 
 #vis-card-number {
   width: 100%;
-  padding-inline: 1rem;
-  top: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.3px;
 }
 
 @media (min-width: 1440px) {
@@ -220,8 +216,34 @@ h6 {
   }
 
   .cards {
-    width: 100%;
+    width: 35rem;
     margin-left: 20%;
+  }
+
+  #vis-card-owner-and-exp-date {
+    bottom: 0;
+  }
+
+  #vis-card-cvc {
+    font-size: 1rem;
+  }
+
+  .credit-card-data,
+  .credit-card-data span {
+    font-size: 1.3rem;
+  }
+  .credit-card-data-sm,
+  .credit-card-data-sm span {
+    font-size: 1rem;
+  }
+
+  .credit-card-back {
+    top: 50%;
+    left: 40%;
+  }
+  .credit-card-front {
+    top: 20%;
+    left: 25%;
   }
 }
 
@@ -278,4 +300,16 @@ h6 {
   border-color: var(--clr-bg);
   background-color: var(--clr-bg);
   color: var(--clr-fg);
+}
+
+@media (min-width: 1440px) {
+  .form-wrapper {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+
+    flex-direction: row;
+    align-items: center;
+  }
 }
