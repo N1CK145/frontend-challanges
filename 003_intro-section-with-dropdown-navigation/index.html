@@ -26,57 +26,55 @@
 
   <body>
     <header class="main-header flex">
-      <div class="flex">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="logo" />
-        </div>
-
-        <nav>
-          <ul class="navigation flex">
-            <li class="nav-item">
-              <div class="dropdown">
-                <a class="navigation-link" href="#features">Features</a>
-                <div class="dropdown-content">
-                  <p class="dropdown-link">
-                    <img class="icon" src="./images/icon-todo.svg" />
-                    Todo List
-                  </p>
-                  <p class="dropdown-link">
-                    <img class="icon" src="./images/icon-calendar.svg" />
-                    Calendar
-                  </p>
-                  <p class="dropdown-link">
-                    <img class="icon" src="./images/icon-reminders.svg" />
-                    Reminders
-                  </p>
-                  <p class="dropdown-link">
-                    <img class="icon" src="./images/icon-planning.svg" />
-                    Planning
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <a class="navigation-link" href="#company">Company</a>
-                <div class="dropdown-content">
-                  <p class="dropdown-link">History</p>
-                  <p class="dropdown-link">Our Team</p>
-                  <p class="dropdown-link">Blog</p>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="navigation-link" href="#careers">Careers</a>
-            </li>
-            <li class="nav-item">
-              <a class="navigation-link" href="#about">About</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
       </div>
 
+      <div class="nav-icon"></div>
+
       <nav>
+        <ul class="navigation flex">
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="navigation-link" href="#features">Features</a>
+              <div class="dropdown-content">
+                <a class="dropdown-link">
+                  <img class="icon" src="./images/icon-todo.svg" />
+                  Todo List
+                </a>
+                <a class="dropdown-link">
+                  <img class="icon" src="./images/icon-calendar.svg" />
+                  Calendar
+                </a>
+                <a class="dropdown-link">
+                  <img class="icon" src="./images/icon-reminders.svg" />
+                  Reminders
+                </a>
+                <a class="dropdown-link">
+                  <img class="icon" src="./images/icon-planning.svg" />
+                  Planning
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="navigation-link" href="#company">Company</a>
+              <div class="dropdown-content">
+                <p class="dropdown-link">History</p>
+                <p class="dropdown-link">Our Team</p>
+                <p class="dropdown-link">Blog</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="navigation-link" href="#careers">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="navigation-link" href="#about">About</a>
+          </li>
+        </ul>
+
         <ul class="navigation flex">
           <li class="nav-item">
             <a href="#login" class="navigation-link login">Login</a>
@@ -89,9 +87,11 @@
     </header>
 
     <main class="main-content wrapper">
+      <div class="main-image"></div>
+
       <div class="content">
-        <div>
-          <h1>Make<br />remote work</h1>
+        <div class="text-content flex">
+          <h1 class="title"><span>Make </span><span>remote work</span></h1>
 
           <p class="description">
             Get your team in sync, no matter your location. Streamline
@@ -107,10 +107,6 @@
           <img src="./images/client-meet.svg" alt="meet" />
           <img src="./images/client-maker.svg" alt="maker" />
         </div>
-      </div>
-
-      <div class="main-image">
-        <img src="./images/image-hero-desktop.png" />
       </div>
     </main>
 
