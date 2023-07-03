@@ -36,7 +36,7 @@
             src="./images/bg-card-back.png"
             alt="card-back"
           />
-          <span class="credit-card-information cvc">000</span>
+          <span id="vis-card-cvc" class="credit-card-information cvc">000</span>
         </div>
         <div class="card-wrapper">
           <img
@@ -46,14 +46,23 @@
           />
 
           <img class="logo" src="images/card-logo.svg" alt="card-logo" />
-          <span class="credit-card-information credit-card-number"
+          <span
+            id="vis-card-number"
+            class="credit-card-information credit-card-number"
             >0000 0000 0000 0000</span
           >
-          <span class="credit-card-information credit-card-owner"
+          <span
+            id="vis-card-owner"
+            class="credit-card-information credit-card-owner"
             >Jane Appleseed</span
           >
-          <span class="credit-card-information credit-card-exp-date"
-            >00/00</span
+          <span
+            id="vis-card-exp-date"
+            class="credit-card-information credit-card-exp-date"
+            ><span id="vis-card-exp-month">00</span>/<span
+              id="vis-card-exp-year"
+              >00</span
+            ></span
           >
         </div>
       </div>
@@ -89,17 +98,15 @@
             <input
               class="form-input"
               type="number"
-              min="1"
-              max="12"
               name="exp-date-month"
               id="exp-date-month"
               placeholder="MM"
+              min="1"
+              max="12"
             />
             <input
               class="form-input"
-              type="text"
-              min="1"
-              max="99"
+              type="number"
               name="exp-date-year"
               id="exp-date-year"
               placeholder="YY"
@@ -111,8 +118,6 @@
             <input
               class="form-input"
               type="number"
-              min="0"
-              max="999"
               name="cvc"
               id="cvc"
               placeholder="e.g. 123"
@@ -132,5 +137,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">N1CK145</a>.
     </div>
+    <script src="main.js"></script>
   </footer>
 </html>

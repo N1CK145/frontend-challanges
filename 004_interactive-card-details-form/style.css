@@ -191,6 +191,10 @@ h6 {
   font-size: 0.6rem;
 }
 
+.card-wrapper .credit-card-exp-date > * {
+  font-size: 0.6rem;
+}
+
 .card-wrapper .cvc {
   position: absolute;
   top: 3.5rem;
