@@ -81,7 +81,7 @@ formCardCvc.addEventListener("input", e => {
     }
 
     if (cvc.length > 3 || +cvc > 999 || +cvc < 0){
-        cvc = month.slice(0, -1)
+        cvc = cvc.slice(0, -1)
         e.target.value = e.target.value.slice(0, -1)
     }
 

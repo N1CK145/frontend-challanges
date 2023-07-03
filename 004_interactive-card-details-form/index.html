@@ -28,106 +28,100 @@
   </head>
 
   <body>
-    <div class="card-section">
-      <div class="cards">
-        <div class="card-wrapper">
-          <img
-            class="credit-card credit-card-back"
-            src="./images/bg-card-back.png"
-            alt="card-back"
-          />
-          <span id="vis-card-cvc" class="credit-card-information cvc">000</span>
-        </div>
-        <div class="card-wrapper">
-          <img
-            class="credit-card credit-card-front"
-            src="./images/bg-card-front.png"
-            alt="card-front"
-          />
+    <main class="main-content">
+      <div class="card-section">
+        <div class="cards">
+          <div class="credit-card credit-card-back">
+            <span id="vis-card-cvc" class="credit-card-data cvc">000</span>
+          </div>
 
-          <img class="logo" src="images/card-logo.svg" alt="card-logo" />
-          <span
-            id="vis-card-number"
-            class="credit-card-information credit-card-number"
-            >0000 0000 0000 0000</span
-          >
-          <span
-            id="vis-card-owner"
-            class="credit-card-information credit-card-owner"
-            >Jane Appleseed</span
-          >
-          <span
-            id="vis-card-exp-date"
-            class="credit-card-information credit-card-exp-date"
-            ><span id="vis-card-exp-month">00</span>/<span
-              id="vis-card-exp-year"
-              >00</span
-            ></span
-          >
+          <div class="credit-card credit-card-front">
+            <img
+              id="credit-card-logo"
+              src="images/card-logo.svg"
+              alt="card-logo"
+            />
+
+            <p id="vis-card-number" class="credit-card-data credit-card-number">
+              0000 0000 0000 0000
+            </p>
+
+            <p
+              id="vis-card-owner-and-exp-date"
+              class="credit-card-data credit-card-data-sm inline-flex"
+            >
+              <span id="vis-card-owner">Jane Appleseed</span>
+              <span id="vis-card-exp-date">
+                <span id="vis-card-exp-month">00</span>
+                /
+                <span id="vis-card-exp-year">00</span>
+              </span>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="form-wrapper">
-      <form action="POST" class="form credit-card-information flex">
-        <div>
-          <label for="card-holder">Cardholder Name</label>
-          <input
-            class="form-input"
-            type="text"
-            name="card-holder"
-            id="card-holder"
-            placeholder="e.g. Jane Appleseed"
-          />
-        </div>
-
-        <div>
-          <label for="card-number">Card Number</label>
-          <input
-            class="form-input"
-            type="text"
-            name="card-number"
-            id="card-number"
-            placeholder="e.g. 1234 5678 9123 0000"
-          />
-        </div>
-
-        <div class="further-data">
-          <label for="card-number">Exp. Date (MM/YY)</label>
-          <div class="exp-date">
+      <div class="form-wrapper">
+        <form action="POST" class="form credit-card-information flex">
+          <div>
+            <label for="card-holder">Cardholder Name</label>
             <input
               class="form-input"
-              type="number"
-              name="exp-date-month"
-              id="exp-date-month"
-              placeholder="MM"
-              min="1"
-              max="12"
-            />
-            <input
-              class="form-input"
-              type="number"
-              name="exp-date-year"
-              id="exp-date-year"
-              placeholder="YY"
+              type="text"
+              name="card-holder"
+              id="card-holder"
+              placeholder="e.g. Jane Appleseed"
             />
           </div>
 
-          <label for="cvc">cvc</label>
-          <div class="cvc">
+          <div>
+            <label for="card-number">Card Number</label>
             <input
               class="form-input"
-              type="number"
-              name="cvc"
-              id="cvc"
-              placeholder="e.g. 123"
+              type="text"
+              name="card-number"
+              id="card-number"
+              placeholder="e.g. 1234 5678 9123 0000"
             />
           </div>
-        </div>
 
-        <button class="btn btn-submit" type="submit">Confirm</button>
-      </form>
-    </div>
+          <div class="further-data">
+            <label for="card-number">Exp. Date (MM/YY)</label>
+            <div class="exp-date">
+              <input
+                class="form-input"
+                type="number"
+                name="exp-date-month"
+                id="exp-date-month"
+                placeholder="MM"
+                min="1"
+                max="12"
+              />
+              <input
+                class="form-input"
+                type="number"
+                name="exp-date-year"
+                id="exp-date-year"
+                placeholder="YY"
+              />
+            </div>
+
+            <label for="cvc">cvc</label>
+            <div class="cvc">
+              <input
+                class="form-input"
+                type="number"
+                name="cvc"
+                id="cvc"
+                placeholder="e.g. 123"
+              />
+            </div>
+          </div>
+
+          <button class="btn btn-submit" type="submit">Confirm</button>
+        </form>
+      </div>
+    </main>
   </body>
 
   <footer>

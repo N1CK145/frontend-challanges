@@ -105,6 +105,11 @@ h6 {
   gap: var(--gap, 1.2rem);
 }
 
+.inline-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn {
   border-radius: 0.5rem;
   width: 100%;
@@ -139,67 +144,85 @@ h6 {
 .credit-card {
   position: absolute;
   width: 75%;
+  aspect-ratio: 264/145;
+  background-size: contain;
+  background-color: hotpink;
 }
 
 .credit-card-back {
+  background: url("images/bg-card-back.png") no-repeat;
+  background-size: contain;
+
   z-index: 10;
   right: 1rem;
 }
 
 .credit-card-front {
+  background: url("images/bg-card-front.png") no-repeat;
+  background-size: contain;
+
   z-index: 11;
 
   left: 1rem;
   top: 6.7rem;
 }
 
-.card-wrapper {
+.credit-card-data,
+.credit-card-data span {
+  color: var(--clr-neutral-700);
+  font-size: 1rem;
   position: relative;
 }
 
-.card-wrapper .credit-card-information {
-  position: absolute;
-  z-index: 20;
-  color: var(--clr-neutral-700);
-}
-
-.card-wrapper .logo {
-  position: absolute;
-  z-index: 20;
-  width: 3rem;
-
-  top: 7.5rem;
-  left: 2rem;
-}
-
-.card-wrapper .credit-card-number {
-  top: 10.5rem;
-  left: 2rem;
-}
-
-.card-wrapper .credit-card-owner {
-  top: 13.1rem;
-  left: 2rem;
-  font-size: 0.6rem;
-
-  text-transform: uppercase;
-}
-
-.card-wrapper .credit-card-exp-date {
-  top: 13.1rem;
-  left: 13rem;
-  font-size: 0.6rem;
-}
-
-.card-wrapper .credit-card-exp-date > * {
-  font-size: 0.6rem;
-}
-
-.card-wrapper .cvc {
-  position: absolute;
-  top: 3.5rem;
-  right: 3rem;
+.credit-card-data-sm,
+.credit-card-data-sm span {
   font-size: 0.7rem;
+}
+
+#vis-card-owner-and-exp-date {
+  padding-inline: 1rem;
+  bottom: -2.1rem;
+}
+
+#vis-card-cvc {
+  font-size: 0.75rem;
+  width: 100%;
+  padding-inline: 1.8rem;
+  text-align: justify;
+  justify-content: end;
+  margin-top: 3.5rem;
+}
+
+#credit-card-logo {
+  width: 4rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#vis-card-number {
+  width: 100%;
+  padding-inline: 1rem;
+  top: 1rem;
+}
+
+@media (min-width: 1440px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+  }
+
+  .card-section {
+    background-image: url(./images/bg-main-desktop.png);
+    width: auto;
+    height: auto;
+    aspect-ratio: unset;
+  }
+
+  .cards {
+    width: 100%;
+    margin-left: 20%;
+  }
 }
 
 /*
