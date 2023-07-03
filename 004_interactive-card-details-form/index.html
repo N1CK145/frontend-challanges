@@ -1,51 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <link rel="stylesheet" href="style.css" />
 
-  000
+    <title>Frontend Mentor | Interactive card details form</title>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+  <body>
+    <div class="card-section">
+      <div class="cards">
+        <div class="card-wrapper">
+          <img
+            class="credit-card credit-card-back"
+            src="./images/bg-card-back.png"
+            alt="card-back"
+          />
+          <span class="credit-card-information cvc">000</span>
+        </div>
+        <div class="card-wrapper">
+          <img
+            class="credit-card credit-card-front"
+            src="./images/bg-card-front.png"
+            alt="card-front"
+          />
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+          <img class="logo" src="images/card-logo.svg" alt="card-logo" />
+          <span class="credit-card-information credit-card-number"
+            >0000 0000 0000 0000</span
+          >
+          <span class="credit-card-information credit-card-owner"
+            >Jane Appleseed</span
+          >
+          <span class="credit-card-information credit-card-exp-date"
+            >00/00</span
+          >
+        </div>
+      </div>
+    </div>
 
-  CVC
-  e.g. 123
+    <div class="form-wrapper">
+      <form action="POST" class="form credit-card-information flex">
+        <div>
+          <label for="card-holder">Cardholder Name</label>
+          <input
+            class="form-input"
+            type="text"
+            name="card-holder"
+            id="card-holder"
+            placeholder="e.g. Jane Appleseed"
+          />
+        </div>
 
-  Confirm
+        <div>
+          <label for="card-number">Card Number</label>
+          <input
+            class="form-input"
+            type="text"
+            name="card-number"
+            id="card-number"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+        </div>
 
-  <!-- Completed state start -->
+        <div class="further-data">
+          <label for="card-number">Exp. Date (MM/YY)</label>
+          <div class="exp-date">
+            <input
+              class="form-input"
+              type="number"
+              min="1"
+              max="12"
+              name="exp-date-month"
+              id="exp-date-month"
+              placeholder="MM"
+            />
+            <input
+              class="form-input"
+              type="text"
+              min="1"
+              max="99"
+              name="exp-date-year"
+              id="exp-date-year"
+              placeholder="YY"
+            />
+          </div>
 
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <label for="cvc">cvc</label>
+          <div class="cvc">
+            <input
+              class="form-input"
+              type="number"
+              min="0"
+              max="999"
+              name="cvc"
+              id="cvc"
+              placeholder="e.g. 123"
+            />
+          </div>
+        </div>
+
+        <button class="btn btn-submit" type="submit">Confirm</button>
+      </form>
+    </div>
+  </body>
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">N1CK145</a>.
+    </div>
+  </footer>
 </html>
